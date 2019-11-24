@@ -10,9 +10,17 @@ namespace Zork
             string gameFilename = (args.Length > 0 ? args[(int)CommandLineArguments.GameFilename] : defaultGameFilename);
 
             ConsoleOutputService output = new ConsoleOutputService();
+            ConsoleInputService input = new ConsoleInputService();
 
-            Game.StartFromFile(gameFilename, output);
-            Console.WriteLine("Thank you for playing!");
+            Game.StartFromFile(gameFilename, input, output);
+            Game.Instance.CommandManager.PerformCommand(Game.Instance, "LOOK");
+            while(Game.Instance.IsRunning)
+            {
+                output.Write("\n> ");
+                input.GetInput();
+            }
+
+            output.WriteLine("Thank you for playing!");
         }
 
         private enum CommandLineArguments

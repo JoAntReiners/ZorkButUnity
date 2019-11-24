@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4877698199547038916}
   - component: {fileID: 6126829644598053680}
   - component: {fileID: 9108215101609702404}
+  - component: {fileID: -8232522023295543448}
   m_Layer: 5
   m_Name: TextLine
   m_TagString: Untagged
@@ -34,8 +35,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 100, y: -10.5}
-  m_SizeDelta: {x: 200, y: 21}
+  m_AnchoredPosition: {x: 358, y: -10.5}
+  m_SizeDelta: {x: 716.01, y: 21}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6126829644598053680
 CanvasRenderer:
@@ -155,3 +156,17 @@ MonoBehaviour:
   - {fileID: 0}
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &-8232522023295543448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4848664231261139256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 2
+  m_VerticalFit: 2

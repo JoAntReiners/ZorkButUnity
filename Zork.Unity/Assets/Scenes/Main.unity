@@ -1660,7 +1660,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 528516245}
   m_Direction: 2
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.9999911
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1712,6 +1712,7 @@ GameObject:
   - component: {fileID: 1571887518}
   - component: {fileID: 1571887517}
   - component: {fileID: 1571887519}
+  - component: {fileID: 1571887520}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1731,8 +1732,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50c2b5cab4941dd4db199a2cd95420f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LocationText: {fileID: 530568606}
+  ScoreText: {fileID: 902308338}
+  MovesText: {fileID: 169901224}
   ZorkGameFileAssetName: Zork
-  Output: {fileID: 1571887519}
+  OutputService: {fileID: 1571887519}
+  InputService: {fileID: 1571887520}
 --- !u!4 &1571887518
 Transform:
   m_ObjectHideFlags: 0
@@ -1759,6 +1764,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a94f32f7f83c442458d1df73087e09be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TextLine: {fileID: 9108215101609702404, guid: 7cbbdd205ffd38b458231a055d80521c,
+    type: 3}
+  Content: {fileID: 445684064}
+--- !u!114 &1571887520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571887516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f17d6e1003db5b848b590a144a3ad57c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InputField: {fileID: 1501466570}
 --- !u!1 &1746881781
 GameObject:
   m_ObjectHideFlags: 0
