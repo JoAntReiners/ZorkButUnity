@@ -14,7 +14,7 @@ namespace Zork
 
             Game.StartFromFile(gameFilename, input, output);
             Game.Instance.CommandManager.PerformCommand(Game.Instance, "LOOK");
-            while(Game.Instance.IsRunning)
+            while (Game.Instance.IsRunning)
             {
                 output.Write("\n> ");
                 input.GetInput();
